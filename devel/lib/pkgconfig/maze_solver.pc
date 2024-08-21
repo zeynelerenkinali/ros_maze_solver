@@ -1,0 +1,8 @@
+prefix=/home/eren/robotcraft_maze_solver/devel
+
+Name: maze_solver
+Description: Description of maze_solver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

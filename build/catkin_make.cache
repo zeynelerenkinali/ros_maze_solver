@@ -1,0 +1,2 @@
+maze_solver
+-DCATKIN_DEVEL_PREFIX=/home/eren/robotcraft_maze_solver/devel -DCMAKE_INSTALL_PREFIX=/home/eren/robotcraft_maze_solver/install -G Unix Makefiles
