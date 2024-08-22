@@ -11,7 +11,7 @@ class mase_BASICsolver():
         self.front_sensor_msg = float('inf')
         self.left_sensor_msg = float('inf')
         self.right_sensor_msg = float('inf')
-        
+         
         # Initialization for algorithm
         self.threshold = 0.7
         self.linear_speed = 0.5 
