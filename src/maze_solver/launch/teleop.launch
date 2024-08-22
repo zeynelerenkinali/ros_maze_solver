@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+ <arg name="map_name" default="robotcraft_maze"/>
+
+    <node pkg="stage_ros" type="stageros" name="stage_ros" args="$(find maze_solver)/world/$(arg map_name).world"/>
+    
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen"/>
+
+</launch>
