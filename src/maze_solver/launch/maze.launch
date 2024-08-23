@@ -1,9 +1,8 @@
 <!-- maze.launch: launch stage with a maze_solver node -->
 
 <launch>
-
+    <!-- start the map -->
     <arg name="map_name" default="robotcraft_maze"/>
     <node pkg="stage_ros" type="stageros" name="stageros" args="$(find maze_solver)/world/$(arg map_name).world"/>
-    <node pkg="maze_solver" type="maze_BASICsolver.py" name="maze_BASICsolver_py" output="screen" cwd="node"/>
 
 </launch>  

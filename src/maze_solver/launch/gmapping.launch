@@ -1,13 +1,20 @@
 <launch>
+    
+    <!-- <node pkg="laserscan_merger" type="laserscan_merger.cpp" name="laserscan_merger" output="screen">
+        
+        <rosparam param="input_scans">[/base_scan_1, /base_scan_2, /base_scan_3]</rosparam>
+        
+        <rosparam param="output_scan">/base_scan</rosparam>
+    </node> -->
 
     <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
         <!--Sensors-->
-         <remap from="/scan" to="/base_scan"/>
+         <remap from="/scan" to="/base_scan_0"/>
          <param name="maxRange" value="5.6"/>
          <param name="xmin" value="0.0"/>
          <param name="ymin" value="0.0"/>
          <param name="xmax" value="30.0"/>
          <param name="ymax" value="30.0"/>
-    </node>
-    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find maze_solver)/config/default.rviz" />
+    </node> 
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find maze_solver)/config/default.rviz"/>
 </launch>

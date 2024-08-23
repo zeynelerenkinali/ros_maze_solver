@@ -1,5 +1,10 @@
 <launch>
 
+      <node pkg="map_server" type="map_server" name="map_server" output="screen">
+        <param name="frame_id" value="map"/>
+        <rosparam param="map_file" file="$(find maze_solver)/maps/robotCraft.yaml"/>
+    </node>
+
   <!-- Launch the move_base node -->
   <node pkg="move_base" type="move_base" name="move_base" output="screen">
     <param name="base_global_planner" value="navfn/NavfnROS"/>

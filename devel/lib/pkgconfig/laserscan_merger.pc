@@ -1,0 +1,8 @@
+prefix=/home/eren/robotcraft_maze_solver/devel
+
+Name: laserscan_merger
+Description: Description of laserscan_merger
+Version: 1.0.4
+Cflags: -I/home/eren/robotcraft_maze_solver/devel/include
+Libs: -L${prefix}/lib 
+Requires: 
