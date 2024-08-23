@@ -140,7 +140,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/eren/robotcraft_maze_solver/build/scan_tools/polar_scan_matcher/cmake_install.cmake")
   include("/home/eren/robotcraft_maze_solver/build/scan_tools/scan_to_cloud_converter/cmake_install.cmake")
   include("/home/eren/robotcraft_maze_solver/build/maze_solver/cmake_install.cmake")
-  include("/home/eren/robotcraft_maze_solver/build/scan_tools/laser_scan_merger/cmake_install.cmake")
+  include("/home/eren/robotcraft_maze_solver/build/scan_tools/laserscan_merger/cmake_install.cmake")
 
 endif()
 

@@ -66,7 +66,7 @@ endif()
 set(laserscan_merger_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
-if("TRUE" STREQUAL "TRUE")
+if("FALSE" STREQUAL "TRUE")
   set(laserscan_merger_SOURCE_PREFIX /home/eren/robotcraft_maze_solver/src/scan_tools/laserscan_merger)
   set(laserscan_merger_DEVEL_PREFIX /home/eren/robotcraft_maze_solver/devel)
   set(laserscan_merger_INSTALL_PREFIX "")
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(laserscan_merger_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/eren/robotcraft_maze_solver/devel/include " STREQUAL " ")
+if(NOT "include " STREQUAL " ")
   set(laserscan_merger_INCLUDE_DIRS "")
-  set(_include_dirs "/home/eren/robotcraft_maze_solver/devel/include")
+  set(_include_dirs "include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/eren/robotcraft_maze_solver/devel/include " STREQUAL " ")
         message(FATAL_ERROR "Project 'laserscan_merger' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'laserscan_merger' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/eren/robotcraft_maze_solver/src/scan_tools/laserscan_merger/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'laserscan_merger' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '\${prefix}/${idir}'.  ${_report}")
     endif()
     _list_append_unique(laserscan_merger_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/eren/robotcraft_maze_solver/devel/lib;/home/eren/robotcraft_maze_solver/devel/lib;/home/eren/robotcraft2024_driver_g2/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/eren/robotcraft_maze_solver/install/lib;/home/eren/robotcraft_maze_solver/devel/lib;/home/eren/robotcraft2024_driver_g2/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -10,6 +10,7 @@
     <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
         <!--Sensors-->
          <remap from="/scan" to="/base_scan_0"/>
+         <remap from="/map" to="/map_"/>
          <param name="maxRange" value="5.6"/>
          <param name="xmin" value="0.0"/>
          <param name="ymin" value="0.0"/>

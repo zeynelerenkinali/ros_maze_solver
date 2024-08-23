@@ -63,7 +63,7 @@ all: scan_tools/laser_scan_matcher/all
 all: scan_tools/polar_scan_matcher/all
 all: scan_tools/scan_to_cloud_converter/all
 all: maze_solver/all
-all: scan_tools/laser_scan_merger/all
+all: scan_tools/laserscan_merger/all
 
 .PHONY : all
 
@@ -78,7 +78,7 @@ preinstall: scan_tools/laser_scan_matcher/preinstall
 preinstall: scan_tools/polar_scan_matcher/preinstall
 preinstall: scan_tools/scan_to_cloud_converter/preinstall
 preinstall: maze_solver/preinstall
-preinstall: scan_tools/laser_scan_merger/preinstall
+preinstall: scan_tools/laserscan_merger/preinstall
 
 .PHONY : preinstall
 
@@ -98,7 +98,7 @@ clean: scan_tools/laser_scan_matcher/clean
 clean: scan_tools/polar_scan_matcher/clean
 clean: scan_tools/scan_to_cloud_converter/clean
 clean: maze_solver/clean
-clean: scan_tools/laser_scan_merger/clean
+clean: scan_tools/laserscan_merger/clean
 
 .PHONY : clean
 
@@ -259,28 +259,6 @@ scan_tools/laser_scan_matcher/clean: scan_tools/laser_scan_matcher/CMakeFiles/ru
 .PHONY : scan_tools/laser_scan_matcher/clean
 
 #=============================================================================
-# Directory level rules for directory scan_tools/laser_scan_merger
-
-# Recursive "all" directory target.
-scan_tools/laser_scan_merger/all: scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/all
-scan_tools/laser_scan_merger/all: scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/all
-scan_tools/laser_scan_merger/all: scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/all
-
-.PHONY : scan_tools/laser_scan_merger/all
-
-# Recursive "preinstall" directory target.
-scan_tools/laser_scan_merger/preinstall:
-
-.PHONY : scan_tools/laser_scan_merger/preinstall
-
-# Recursive "clean" directory target.
-scan_tools/laser_scan_merger/clean: scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/clean
-scan_tools/laser_scan_merger/clean: scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/clean
-scan_tools/laser_scan_merger/clean: scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/clean
-
-.PHONY : scan_tools/laser_scan_merger/clean
-
-#=============================================================================
 # Directory level rules for directory scan_tools/laser_scan_sparsifier
 
 # Recursive "all" directory target.
@@ -358,6 +336,28 @@ scan_tools/laser_scan_splitter/clean: scan_tools/laser_scan_splitter/CMakeFiles/
 scan_tools/laser_scan_splitter/clean: scan_tools/laser_scan_splitter/CMakeFiles/laser_scan_splitter.dir/clean
 
 .PHONY : scan_tools/laser_scan_splitter/clean
+
+#=============================================================================
+# Directory level rules for directory scan_tools/laserscan_merger
+
+# Recursive "all" directory target.
+scan_tools/laserscan_merger/all: scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/all
+scan_tools/laserscan_merger/all: scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/all
+scan_tools/laserscan_merger/all: scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/all
+
+.PHONY : scan_tools/laserscan_merger/all
+
+# Recursive "preinstall" directory target.
+scan_tools/laserscan_merger/preinstall:
+
+.PHONY : scan_tools/laserscan_merger/preinstall
+
+# Recursive "clean" directory target.
+scan_tools/laserscan_merger/clean: scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/clean
+scan_tools/laserscan_merger/clean: scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/clean
+scan_tools/laserscan_merger/clean: scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/clean
+
+.PHONY : scan_tools/laserscan_merger/clean
 
 #=============================================================================
 # Directory level rules for directory scan_tools/ncd_parser
@@ -3993,85 +3993,85 @@ scan_tools/scan_to_cloud_converter/CMakeFiles/scan_to_cloud_converter_node.dir/c
 .PHONY : scan_tools/scan_to_cloud_converter/CMakeFiles/scan_to_cloud_converter_node.dir/clean
 
 #=============================================================================
-# Target rules for target scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir
+# Target rules for target scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir
 
 # All Build rule for target.
-scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/all:
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/depend
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/build
+scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/all:
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/build.make scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/depend
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/build.make scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eren/robotcraft_maze_solver/build/CMakeFiles --progress-num=42,43 "Built target republish_scans"
-.PHONY : scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/all
+.PHONY : scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/all
 
 # Build rule for subdir invocation for target.
-scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/rule: cmake_check_build_system
+scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eren/robotcraft_maze_solver/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eren/robotcraft_maze_solver/build/CMakeFiles 0
-.PHONY : scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/rule
+.PHONY : scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/rule
 
 # Convenience name for target.
-republish_scans: scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/rule
+republish_scans: scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/rule
 
 .PHONY : republish_scans
 
 # clean rule for target.
-scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/clean:
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/clean
-.PHONY : scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/clean
+scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/clean:
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/build.make scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/clean
+.PHONY : scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/clean
 
 #=============================================================================
-# Target rules for target scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir
+# Target rules for target scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir
 
 # All Build rule for target.
-scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/all: scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/all
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/depend
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/build
+scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/all: scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/all
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/build.make scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/depend
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/build.make scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eren/robotcraft_maze_solver/build/CMakeFiles --progress-num=33,34 "Built target laserscan_merger"
-.PHONY : scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/all
+.PHONY : scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/all
 
 # Build rule for subdir invocation for target.
-scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/rule: cmake_check_build_system
+scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eren/robotcraft_maze_solver/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eren/robotcraft_maze_solver/build/CMakeFiles 0
-.PHONY : scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/rule
+.PHONY : scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/rule
 
 # Convenience name for target.
-laserscan_merger: scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/rule
+laserscan_merger: scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/rule
 
 .PHONY : laserscan_merger
 
 # clean rule for target.
-scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/clean:
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/clean
-.PHONY : scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/clean
+scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/clean:
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/build.make scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/clean
+.PHONY : scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/clean
 
 #=============================================================================
-# Target rules for target scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir
+# Target rules for target scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir
 
 # All Build rule for target.
-scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/all:
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/depend
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build
+scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/all:
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build.make scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/depend
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build.make scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eren/robotcraft_maze_solver/build/CMakeFiles --progress-num=35 "Built target laserscan_merger_gencfg"
-.PHONY : scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/all
+.PHONY : scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
-scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/rule: cmake_check_build_system
+scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eren/robotcraft_maze_solver/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eren/robotcraft_maze_solver/build/CMakeFiles 0
-.PHONY : scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/rule
+.PHONY : scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/rule
 
 # Convenience name for target.
-laserscan_merger_gencfg: scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/rule
+laserscan_merger_gencfg: scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/rule
 
 .PHONY : laserscan_merger_gencfg
 
 # clean rule for target.
-scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/clean:
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/clean
-.PHONY : scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/clean
+scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/clean:
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build.make scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/clean
+.PHONY : scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

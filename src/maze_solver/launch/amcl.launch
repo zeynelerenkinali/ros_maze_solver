@@ -3,7 +3,7 @@
   <!-- Launch the AMCL node -->
   <node pkg="amcl" type="amcl" name="amcl" output="screen">
   		<!-- Sensors -->
-		<remap from="/scan" to="/base_scan"/>
+		<remap from="/scan" to="/base_scan_0"/>
     
     <param name="odom_alpha1" value="0.2"/>
     <param name="odom_alpha2" value="0.2"/>
@@ -27,7 +27,7 @@
     <param name="gui_publish_rate" value="10.0"/>
   </node>
 
- <arg name="map_name" default="map"/>  
+ <arg name="map_name" default="robotcraft_maze_map"/>  
 
   <!-- Launch the map_server to provide the static map -->
   <node pkg="map_server" type="map_server" name="map_server" output="screen" args="$(find maze_solver)/maps_slam/$(arg map_name).yaml">

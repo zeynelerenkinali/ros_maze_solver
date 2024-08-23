@@ -1711,7 +1711,7 @@ republish_scans: cmake_check_build_system
 
 # fast build rule for target.
 republish_scans/fast:
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/republish_scans.dir/build
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/build.make scan_tools/laserscan_merger/CMakeFiles/republish_scans.dir/build
 .PHONY : republish_scans/fast
 
 #=============================================================================
@@ -1724,7 +1724,7 @@ laserscan_merger: cmake_check_build_system
 
 # fast build rule for target.
 laserscan_merger/fast:
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger.dir/build
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/build.make scan_tools/laserscan_merger/CMakeFiles/laserscan_merger.dir/build
 .PHONY : laserscan_merger/fast
 
 #=============================================================================
@@ -1737,7 +1737,7 @@ laserscan_merger_gencfg: cmake_check_build_system
 
 # fast build rule for target.
 laserscan_merger_gencfg/fast:
-	$(MAKE) -f scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build.make scan_tools/laser_scan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build
+	$(MAKE) -f scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build.make scan_tools/laserscan_merger/CMakeFiles/laserscan_merger_gencfg.dir/build
 .PHONY : laserscan_merger_gencfg/fast
 
 # Help Target

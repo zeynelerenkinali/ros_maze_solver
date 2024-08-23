@@ -828,10 +828,10 @@ laser_scan_splitter_SOURCE_DIR:STATIC=/home/eren/robotcraft_maze_solver/src/scan
 laser_scan_splitter_nodelet_LIB_DEPENDS:STATIC=general;laser_scan_splitter;
 
 //Value Computed by CMake
-laserscan_merger_BINARY_DIR:STATIC=/home/eren/robotcraft_maze_solver/build/scan_tools/laser_scan_merger
+laserscan_merger_BINARY_DIR:STATIC=/home/eren/robotcraft_maze_solver/build/scan_tools/laserscan_merger
 
 //Value Computed by CMake
-laserscan_merger_SOURCE_DIR:STATIC=/home/eren/robotcraft_maze_solver/src/scan_tools/laser_scan_merger
+laserscan_merger_SOURCE_DIR:STATIC=/home/eren/robotcraft_maze_solver/src/scan_tools/laserscan_merger
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/noetic/lib/libtopic_tools.so
