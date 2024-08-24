@@ -1,4 +1,4 @@
-image: robotcraft_maze_map.pgm
+image: robotcraft_maze_map_new.pgm
 resolution: 0.050000
 origin: [-14.400000, -14.400000, 0.000000]
 negate: 0
