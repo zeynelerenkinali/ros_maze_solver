@@ -8,19 +8,33 @@ global_costmap:
   static_map: true
   inflation_radius: 0.2
 
-# Local costmap parameters
-local_costmap:
-  global_frame: odom
-  robot_base_frame: base_link
-  update_frequency: 5.0
-  publish_frequency: 5.0
-  transform_tolerance: 0.5
-  static_map: false
-  rolling_window: true
-  width: 3.0
-  height: 3.0
-  resolution: 0.05
-  inflation_radius: 0.00
+# move_base_params.yaml
+
+base_global_planner: "global_planner/GlobalPlanner"
+
+GlobalPlanner:
+  use_dijkstra: false  # Disable Dijkstra's algorithm
+  use_quadratic: false # No quadratic approximation
+  allow_unknown: true  # Allow planning in unknown space
+  default_tolerance: 0.0
+  planner_window_x: 0.0
+  planner_window_y: 0.0
+  cost_factor: 3.0     # Factor to multiply cost values
+  orientation_mode: 0  # 0 - None, 1 - Forward, 2 - Interpolate
+
+# # Local costmap parameters
+# local_costmap:
+#   global_frame: odom
+#   robot_base_frame: base_link
+#   update_frequency: 5.0
+#   publish_frequency: 5.0
+#   transform_tolerance: 0.5
+#   static_map: false
+#   rolling_window: true
+#   width: 3.0
+#   height: 3.0
+#   resolution: 0.05
+#   inflation_radius: 0.00
 
 # # Trajectory planner parameters
 # TrajectoryPlannerROS:

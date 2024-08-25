@@ -131,16 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/eren/robotcraft_maze_solver/build/gtest/cmake_install.cmake")
-  include("/home/eren/robotcraft_maze_solver/build/scan_tools/scan_tools/cmake_install.cmake")
-  include("/home/eren/robotcraft_maze_solver/build/scan_tools/laser_scan_sparsifier/cmake_install.cmake")
-  include("/home/eren/robotcraft_maze_solver/build/scan_tools/laser_scan_splitter/cmake_install.cmake")
-  include("/home/eren/robotcraft_maze_solver/build/scan_tools/ncd_parser/cmake_install.cmake")
-  include("/home/eren/robotcraft_maze_solver/build/scan_tools/laser_ortho_projector/cmake_install.cmake")
-  include("/home/eren/robotcraft_maze_solver/build/scan_tools/laser_scan_matcher/cmake_install.cmake")
-  include("/home/eren/robotcraft_maze_solver/build/scan_tools/polar_scan_matcher/cmake_install.cmake")
-  include("/home/eren/robotcraft_maze_solver/build/scan_tools/scan_to_cloud_converter/cmake_install.cmake")
   include("/home/eren/robotcraft_maze_solver/build/maze_solver/cmake_install.cmake")
-  include("/home/eren/robotcraft_maze_solver/build/scan_tools/laserscan_merger/cmake_install.cmake")
 
 endif()
 
