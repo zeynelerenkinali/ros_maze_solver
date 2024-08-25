@@ -1,4 +1,38 @@
-# Global costmap parameters
+# move_base_params.yaml
+base_global_planner: "global_planner/GlobalPlanner"
+base_local_planner: "teb_local_planner/TebLocalPlannerROS"
+
+GlobalPlanner:
+  use_dijkstra: false
+  use_quadratic: false
+  allow_unknown: true
+  default_tolerance: 0.0
+  planner_window_x: 0.0
+  planner_window_y: 0.0
+  cost_factor: 3.0
+  orientation_mode: 0
+
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_link
+  update_frequency: 5.0
+  publish_frequency: 5.0
+  transform_tolerance: 0.5
+  rolling_window: true
+  width: 3.0
+  height: 3.0
+  resolution: 0.05
+  inflation_radius: 0.00
+  obstacle_layer:
+    enabled: true
+    max_obstacle_height: 2.0
+    obstacle_range: 2.5
+    raytrace_range: 3.0
+    inflation_radius: 0.55
+    cost_scaling_factor: 10.0
+    observation_sources: laser_scan
+    laser_scan: {sensor_frame: laser_frame, data_type: LaserScan, topic: base_scan_0, marking: true, clearing: true}
+
 global_costmap:
   global_frame: map
   robot_base_frame: base_link
@@ -6,44 +40,5 @@ global_costmap:
   publish_frequency: 5.0
   transform_tolerance: 0.5
   static_map: true
-  inflation_radius: 0.2
-
-# move_base_params.yaml
-
-base_global_planner: "global_planner/GlobalPlanner"
-
-GlobalPlanner:
-  use_dijkstra: false  # Disable Dijkstra's algorithm
-  use_quadratic: false # No quadratic approximation
-  allow_unknown: true  # Allow planning in unknown space
-  default_tolerance: 0.0
-  planner_window_x: 0.0
-  planner_window_y: 0.0
-  cost_factor: 3.0     # Factor to multiply cost values
-  orientation_mode: 0  # 0 - None, 1 - Forward, 2 - Interpolate
-
-# # Local costmap parameters
-# local_costmap:
-#   global_frame: odom
-#   robot_base_frame: base_link
-#   update_frequency: 5.0
-#   publish_frequency: 5.0
-#   transform_tolerance: 0.5
-#   static_map: false
-#   rolling_window: true
-#   width: 3.0
-#   height: 3.0
-#   resolution: 0.05
-#   inflation_radius: 0.00
-
-# # Trajectory planner parameters
-# TrajectoryPlannerROS:
-#   max_vel_x: 0.08
-#   min_vel_x: 0.01
-#   max_vel_theta: 1.0
-#   min_vel_theta: -1.0
-#   acc_lim_x: 0.5
-#   acc_lim_theta: 1.2
-#   yaw_goal_tolerance: 3.14
-#   xy_goal_tolerance: 0.20
-#   latch_xy_goal_tolerance: true
+  map_topic: "/map"
+  inflation_radius: 0.15

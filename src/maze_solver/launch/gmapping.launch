@@ -1,21 +1,23 @@
 <launch>
-    
-    <!-- <node pkg="laserscan_merger" type="laserscan_merger.cpp" name="laserscan_merger" output="screen">
-        
-        <rosparam param="input_scans">[/base_scan_1, /base_scan_2, /base_scan_3]</rosparam>
-        
-        <rosparam param="output_scan">/base_scan</rosparam>
-    </node> -->
-
+    <!-- Gmapping Node -->
     <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
-        <!--Sensors-->
-         <remap from="/scan" to="/base_scan_0"/>
-         <remap from="/map" to="/map_"/>
-         <param name="maxRange" value="5.6"/>
-         <param name="xmin" value="0.0"/>
-         <param name="ymin" value="0.0"/>
-         <param name="xmax" value="30.0"/>
-         <param name="ymax" value="30.0"/>
-    </node> 
-    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find maze_solver)/config/default.rviz"/>
+        <!-- Sensors -->
+        <remap from="/scan" to="/base_scan_0"/>
+        <remap from="/map" to="/map_"/>
+        <param name="maxRange" value="5.6"/>
+        <param name="xmin" value="0.0"/>
+        <param name="ymin" value="0.0"/>
+        <param name="xmax" value="30.0"/>
+        <param name="ymax" value="30.0"/>
+        <!-- Adjust transform_publish_period to control TF publishing frequency -->
+        <param name="transform_publish_period" value="0.1"/>  <!-- Adjust this value as needed -->
+    </node>
+
+    <!-- Static Transform Publisher (base_link to laser_frame) -->
+    <!-- This is necessary if your TF tree is missing certain frames -->
+    <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom 100" />
+
+    <!-- RViz Visualization -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find maze_solver)/config/default2.rviz"/>
+    
 </launch>
