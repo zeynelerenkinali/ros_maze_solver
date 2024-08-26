@@ -16,11 +16,11 @@ TebLocalPlannerROS:
   max_vel_theta: 1.0
   acc_lim_x: 0.5
   acc_lim_theta: 1.0
-  min_turning_radius: 0.0         # can be set to zero for a differential drive robot
+  min_turning_radius: 0.0         
 
   footprint_model: 
     type: "polygon"
-    vertices: [[0.35, 0.2], [0.35, -0.2], [-0.35, -0.2], [-0.35, 0.2]]
+    vertices: [[0.1, 0.1], [0.1, -0.1], [-0.1, -0.1], [-0.1, 0.1]]
 
   # Obstacles
   min_obstacle_dist: 0.4
@@ -32,8 +32,8 @@ TebLocalPlannerROS:
   # Optimization
   weight_optimaltime: 1.0
   weight_obstacle: 50.0
-  weight_viapoint: 1.0
-  weight_dynamic_obstacle: 10.0   # not in use yet
+  weight_viapoint: 1000.0
+  weight_dynamic_obstacle: 10.0   
   weight_adapt_factor: 2.0
 
   # Visualization

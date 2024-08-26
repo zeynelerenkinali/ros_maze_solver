@@ -1,5 +1,5 @@
 <launch>
-      <!-- <node pkg="map_server" type="map_server" name="map_server" output="screen">
+   <!-- <node pkg="map_server" type="map_server" name="map_server" output="screen">
         <param name="frame_id" value="map"/>
         <rosparam param="map_file" file="$(find maze_solver)/maps/robotCraft.yaml"/>
     </node> -->
@@ -12,7 +12,7 @@
     <rosparam file="$(find maze_solver)/params/move_base_params.yaml" command="load"/>
     <!-- <rosparam file="$(find maze_solver)/params/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find maze_solver)/params/global_costmap_params.yaml" command="load" /> -->
-    <!-- <rosparam file="$(find maze_solver)/params/teb_costmap_planner_params.yaml" command="load" /> -->
+    <rosparam file="$(find maze_solver)/params/teb_local_planner_params.yaml" command="load" />
 
   </node>
 
