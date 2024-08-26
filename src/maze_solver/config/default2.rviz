@@ -11,7 +11,6 @@ Panels:
         - /Map1
         - /Path1
         - /Path2
-        - /Marker1
       Splitter Ratio: 0.5
     Tree Height: 719
   - Class: rviz/Selection
@@ -76,6 +75,8 @@ Visualization Manager:
           Value: false
         base_link:
           Value: true
+        laser_frame:
+          Value: true
         map:
           Value: true
         odom:
@@ -99,11 +100,13 @@ Visualization Manager:
                   {}
                 base_laser_link_3:
                   {}
+                laser_frame:
+                  {}
       Update Interval: 0
       Value: true
     - Alpha: 0.699999988079071
       Class: rviz/Map
-      Color Scheme: map
+      Color Scheme: costmap
       Draw Behind: false
       Enabled: true
       Name: Map
@@ -132,13 +135,13 @@ Visualization Manager:
       Radius: 0.029999999329447746
       Shaft Diameter: 0.10000000149011612
       Shaft Length: 0.10000000149011612
-      Topic: /move_base/TebLocalPlannerROS/local_plan
+      Topic: /move_base/GlobalPlanner/plan
       Unreliable: false
       Value: true
     - Alpha: 1
       Buffer Length: 1
       Class: rviz/Path
-      Color: 25; 255; 0
+      Color: 32; 74; 135
       Enabled: true
       Head Diameter: 0.30000001192092896
       Head Length: 0.20000000298023224
@@ -156,16 +159,17 @@ Visualization Manager:
       Radius: 0.029999999329447746
       Shaft Diameter: 0.10000000149011612
       Shaft Length: 0.10000000149011612
-      Topic: /move_base/GlobalPlanner/plan
+      Topic: /move_base/TrajectoryPlannerROS/local_plan
       Unreliable: false
       Value: true
-    - Class: rviz/Marker
+    - Alpha: 1
+      Class: rviz/Polygon
+      Color: 25; 255; 0
       Enabled: true
-      Marker Topic: /move_base/TebLocalPlannerROS/teb_markers
-      Name: Marker
-      Namespaces:
-        {}
-      Queue Size: 100
+      Name: Polygon
+      Queue Size: 10
+      Topic: /move_base/global_costmap/footprint
+      Unreliable: false
       Value: true
   Enabled: true
   Global Options:
@@ -195,7 +199,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 10.372556686401367
+      Distance: 2.2120580673217773
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -203,9 +207,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 1.1600738763809204
-        Y: -1.1986947059631348
-        Z: 0.32141098380088806
+        X: 0.08304185420274734
+        Y: -0.22188927233219147
+        Z: 0.13030485808849335
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
