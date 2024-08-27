@@ -1,0 +1,5 @@
+1.maze.launch
+2.rosrun map_server map_server src/maze_solver/maps_slam/robotcraft_maze_map.yaml
+3.amcl.launch
+4.rosrun rviz rviz -d default2.rviz
+5.move_base
