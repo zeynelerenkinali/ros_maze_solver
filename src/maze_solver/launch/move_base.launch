@@ -14,7 +14,5 @@
     <!-- <rosparam file="$(find maze_solver)/params/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find maze_solver)/params/global_costmap_params.yaml" command="load" /> -->
     <rosparam file="$(find maze_solver)/params/trajectory_local_planner_params.yaml" command="load" />
-
   </node>
-
 </launch>
