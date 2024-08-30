@@ -1,0 +1,6 @@
+image: /home/eren/robotcraft_maze_solver/src/maze_solver/maps_slam/robotcraft_test_map_without_noise.pgm
+resolution: 0.100000
+origin: [-12.800000, -12.800000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196

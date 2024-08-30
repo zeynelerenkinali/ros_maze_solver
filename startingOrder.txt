@@ -3,3 +3,9 @@
 3.amcl.launch
 4.rosrun rviz rviz -d default2.rviz
 5.move_base
+
+1.roscore
+2.rosrun map_server map_server src/maze_solver/maps_slam/robotcraft_test_map.yaml
+3.amcl.launch
+4.rosrun rviz rviz -d src/maze_solver/config/default2.rviz
+5.move_base

@@ -1,8 +1,8 @@
 # Trajectory planner parameters
 TrajectoryPlannerROS:
   meter_scoring: true
-  max_vel_x: 0.38
-  min_vel_x: 0.16
+  max_vel_x: 0.8
+  min_vel_x: 0.5
   max_vel_theta: 1.0
   min_vel_theta: -1.0
   acc_lim_x: 2.5
@@ -10,4 +10,4 @@ TrajectoryPlannerROS:
   yaw_goal_tolerance: 0.05
   xy_goal_tolerance: 0.2
   latch_xy_goal_tolerance: true
-  footprint: [[0.12, 0.12], [0.12, -0.12], [-0.12, -0.12], [-0.12, 0.12]]
+  footprint: [[0.08, 0.08], [0.08, -0.08], [-0.08, -0.08], [-0.08, 0.08]]
