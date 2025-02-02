@@ -129,4 +129,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ---
 ## Contributors  
 
-. **Zeynel Eren Kınalı** - [GitHub Profile](https://github.com/zeynelerenkinali)
+- **Zeynel Eren Kınalı** - [GitHub Profile](https://github.com/zeynelerenkinali)
