@@ -18,20 +18,20 @@ This repository contains ROS-based maze-solving algorithms developed for the **R
 
 ## Repository Structure
 ros_maze_solver/
-├── basic_maze_solver/ # Basic maze solver using IR sensors
-│ ├── launch/ # ROS launch files
-│ ├── scripts/ # Python scripts for IR sensor-based navigation
-│ ├── urdf/ # URDF files for the robot model
-│ └── worlds/ # Gazebo world files for simulation
+├── basic_maze_solver/          # Basic maze solver using IR sensors
+│   ├── launch/                 # ROS launch files
+│   ├── scripts/                # Python scripts for IR sensor-based navigation
+│   ├── urdf/                   # URDF files for the robot model
+│   └── worlds/                 # Gazebo world files for simulation
 │
-├── advanced_maze_solver/ # Advanced maze solver using YDLIDAR
-│ ├── launch/ # ROS launch files
-│ ├── scripts/ # Python scripts for YDLIDAR-based navigation
-│ ├── maps/ # Pre-generated maps for testing
-│ └── config/ # Configuration files for YDLIDAR and navigation
+├── advanced_maze_solver/       # Advanced maze solver using YDLIDAR
+│   ├── launch/                 # ROS launch files
+│   ├── scripts/                # Python scripts for YDLIDAR-based navigation
+│   ├── maps/                   # Pre-generated maps for testing
+│   └── config/                 # Configuration files for YDLIDAR and navigation
 │
-├── README.md # This file
-└── LICENSE # License file
+├── README.md                   # This file
+└── LICENSE                     # License file
 
 
 ## Requirements
