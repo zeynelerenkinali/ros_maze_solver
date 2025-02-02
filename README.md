@@ -17,6 +17,7 @@ This repository contains ROS-based maze-solving algorithms developed for the **R
   - Supports simulation in **Gazebo** and real-world deployment.
 
 ## Repository Structure
+```bash
 ros_maze_solver/
 ├── basic_maze_solver/          # Basic maze solver using IR sensors
 │   ├── launch/                 # ROS launch files
@@ -32,7 +33,7 @@ ros_maze_solver/
 │
 ├── README.md                   # This file
 └── LICENSE                     # License file
-
+```
 
 ## Requirements
 
